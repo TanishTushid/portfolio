@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanish — Machine Learning Engineer</title>
+  <meta name="description" content="Tanish's ML/AI Portfolio — building intelligent systems, machine learning applications, and AI-powered solutions." />
+  <meta name="keywords" content="Machine Learning, AI, Deep Learning, Python, TensorFlow, Portfolio" />
+  <meta property="og:title" content="Tanish — ML Engineer" />
+  <meta property="og:description" content="Building intelligent systems and AI-powered solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="nav-logo-link">TANISH</a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#home"           class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about"          class="nav-link"        id="nav-about">About</a></li>
+        <li><a href="#skills"         class="nav-link"        id="nav-skills">Skills</a></li>
+        <li><a href="#projects"       class="nav-link"        id="nav-projects">Projects</a></li>
+        <li><a href="#experience"     class="nav-link"        id="nav-experience">Experience</a></li>
+        <li><a href="#certifications" class="nav-link"        id="nav-certifications">Certs</a></li>
+        <li><a href="#contact"        class="nav-link"        id="nav-contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-dark" id="nav-contact-btn">CONTACT ME</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero-section" aria-label="Hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left -->
+          <div class="hero-left">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              AVAILABLE FOR INTERNSHIP
+            </div>
+
+            <div>
+              <div class="hero-greeting">Hello, World! I'm</div>
+              <h1 class="hero-name">
+                MACHINE<br>
+                <span class="line2">LEARNING</span>
+              </h1>
+              <div class="hero-subtitle">ENGINEER</div>
+            </div>
+
+            <p class="hero-desc">
+              I build intelligent systems, machine learning applications, and AI-powered solutions that turn raw data into meaningful decisions.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary" id="cta-projects">&#9654; VIEW PROJECTS</a>
+              <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="cta-github">&#9830; GITHUB</a>
+            </div>
+
+            <div class="hero-socials" aria-label="Social links">
+              <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-gh" aria-label="GitHub">&#9830;</a>
+              <a href="https://linkedin.com/in/tanish" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-li" aria-label="LinkedIn">&#128279;</a>
+              <a href="https://leetcode.com/tanish" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-lc" aria-label="LeetCode">&#127918;</a>
+              <a href="mailto:tanish@example.com" class="social-btn" id="social-em" aria-label="Email">&#128231;</a>
+            </div>
+
+            <div class="hero-stats" aria-label="Quick stats">
+              <div class="stat-item">
+                <span class="stat-val">4+</span>
+                <span class="stat-label">AI Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val">3+</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val">150+</span>
+                <span class="stat-label">DSA Problems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="hero-right">
+            <div class="hero-image-wrap">
+              <!-- Portrait photo -->
+              <img
+                src="hero.jpg"
+                alt="Tanish — ML Engineer"
+                class="hero-portrait"
+                id="hero-portrait"
+              />
+              <!-- Floating label overlay -->
+              <div class="hero-photo-overlay" aria-hidden="true">
+                <span class="hpo-badge">&#128100; ML ENGINEER</span>
+              </div>
+              <!-- Floating tech tags at bottom -->
+              <div class="pixel-float-tags" aria-hidden="true">
+                <span class="pft">&#127822; Python</span>
+                <span class="pft">&#9889; TensorFlow</span>
+                <span class="pft">&#129504; AI</span>
+                <span class="pft">&#9881; ML</span>
+                <span class="pft">&#128202; Data</span>
+              </div>
+            </div>
+
+            <div class="hero-stat-bar" aria-label="Tech stack highlights">
+              <div class="hsb-item">
+                <span class="hsb-val">Python</span>
+                <span class="hsb-label">Primary Lang</span>
+              </div>
+              <div class="hsb-divider" aria-hidden="true"></div>
+              <div class="hsb-item">
+                <span class="hsb-val">TF/Keras</span>
+                <span class="hsb-label">Deep Learning</span>
+              </div>
+              <div class="hsb-divider" aria-hidden="true"></div>
+              <div class="hsb-item">
+                <span class="hsb-val">FastAPI</span>
+                <span class="hsb-label">Deployment</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section about-section" aria-label="About me">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// ABOUT_ME.py</div>
+          <h2 class="section-title">ABOUT <span class="accent">ME</span></h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-cards">
+
+            <div class="about-card brut-card" id="about-who">
+              <div class="ac-icon">&#128100;</div>
+              <div class="ac-label">WHO_AM_I</div>
+              <p>I'm <strong>Tanish</strong>, a passionate ML engineer and AI enthusiast. I love building intelligent systems that solve real-world problems — from predictive models to computer vision pipelines.</p>
+            </div>
+
+            <div class="about-card brut-card" id="about-work">
+              <div class="ac-icon">&#9881;</div>
+              <div class="ac-label">WHAT_I_WORK_WITH</div>
+              <p>I specialize in <strong>Python</strong>, <strong>TensorFlow</strong>, <strong>Scikit-learn</strong>, and the broader ML ecosystem. End-to-end pipelines from preprocessing to deployment with FastAPI and Docker.</p>
+            </div>
+
+            <div class="about-card brut-card" id="about-learning">
+              <div class="ac-icon">&#128218;</div>
+              <div class="ac-label">CURRENTLY_LEARNING</div>
+              <p>Diving into <strong>Transformer architectures</strong>, <strong>LLM fine-tuning</strong>, and <strong>MLOps</strong>. Exploring agentic AI systems and RAG-based applications.</p>
+            </div>
+
+            <div class="about-card brut-card" id="about-interests">
+              <div class="ac-icon">&#127919;</div>
+              <div class="ac-label">INTERESTS</div>
+              <p>Deep Learning &middot; Computer Vision &middot; NLP &middot; Reinforcement Learning &middot; AI Agents &middot; Open Source &middot; Problem Solving &middot; Research</p>
+            </div>
+
+          </div>
+
+          <div class="about-terminal brut-card" id="about-terminal-panel" aria-label="Terminal output">
+            <div class="terminal-bar">
+              <span class="t-dot td-r"></span>
+              <span class="t-dot td-y"></span>
+              <span class="t-dot td-g"></span>
+              <span class="terminal-title">tanish@ml-machine:~$</span>
+            </div>
+            <div class="terminal-body" id="about-terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat profile.json</span></div>
+              <div class="t-line t-output">{</div>
+              <div class="t-line t-output">&nbsp;&nbsp;"name": <span class="t-string">"Tanish"</span>,</div>
+              <div class="t-line t-output">&nbsp;&nbsp;"role": <span class="t-string">"ML Engineer &amp; AI Developer"</span>,</div>
+              <div class="t-line t-output">&nbsp;&nbsp;"passion": <span class="t-string">"Building intelligent systems"</span>,</div>
+              <div class="t-line t-output">&nbsp;&nbsp;"status": <span class="t-string">"Seeking internship opportunities"</span>,</div>
+              <div class="t-line t-output">&nbsp;&nbsp;"coffee_level": <span class="t-number">9001</span></div>
+              <div class="t-line t-output">}</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">&#9608;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section skills-section" aria-label="Skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// SKILLS.json</div>
+          <h2 class="section-title">MY <span class="accent">SKILLS</span></h2>
+        </div>
+
+        <div class="bubble-skills-grid" aria-label="Skills by category">
+
+          <div class="bubble-category" id="skills-programming">
+            <div class="bubble-cat-header">
+              <span class="bubble-cat-icon">&#128187;</span>
+              <h3 class="bubble-cat-title pixel-label">PROGRAMMING</h3>
+            </div>
+            <div class="bubble-tags">
+              <span class="skill-bubble sb-color-pink" id="sb-python">&#127822; Python</span>
+              <span class="skill-bubble sb-color-pink" id="sb-sql">&#128196; SQL</span>
+              <span class="skill-bubble sb-color-pink" id="sb-git">&#128230; Git</span>
+              <span class="skill-bubble sb-color-pink" id="sb-github">&#9830; GitHub</span>
+            </div>
+          </div>
+
+          <div class="bubble-category" id="skills-datascience">
+            <div class="bubble-cat-header">
+              <span class="bubble-cat-icon">&#128202;</span>
+              <h3 class="bubble-cat-title pixel-label">DATA SCIENCE</h3>
+            </div>
+            <div class="bubble-tags">
+              <span class="skill-bubble sb-color-cyan" id="sb-numpy">NumPy</span>
+              <span class="skill-bubble sb-color-cyan" id="sb-pandas">Pandas</span>
+              <span class="skill-bubble sb-color-cyan" id="sb-matplotlib">Matplotlib</span>
+              <span class="skill-bubble sb-color-cyan" id="sb-plotly">Plotly</span>
+              <span class="skill-bubble sb-color-cyan" id="sb-eda">&#128270; EDA</span>
+            </div>
+          </div>
+
+          <div class="bubble-category" id="skills-ml">
+            <div class="bubble-cat-header">
+              <span class="bubble-cat-icon">&#129302;</span>
+              <h3 class="bubble-cat-title pixel-label">MACHINE LEARNING</h3>
+            </div>
+            <div class="bubble-tags">
+              <span class="skill-bubble sb-color-yellow" id="sb-sklearn">Scikit-learn</span>
+              <span class="skill-bubble sb-color-yellow" id="sb-xgb">XGBoost</span>
+              <span class="skill-bubble sb-color-yellow" id="sb-lgbm">LightGBM</span>
+              <span class="skill-bubble sb-color-yellow" id="sb-catboost">CatBoost</span>
+            </div>
+          </div>
+
+          <div class="bubble-category" id="skills-dl">
+            <div class="bubble-cat-header">
+              <span class="bubble-cat-icon">&#129504;</span>
+              <h3 class="bubble-cat-title pixel-label">DEEP LEARNING</h3>
+            </div>
+            <div class="bubble-tags">
+              <span class="skill-bubble sb-color-lavender" id="sb-tf">TensorFlow</span>
+              <span class="skill-bubble sb-color-lavender" id="sb-keras">Keras</span>
+              <span class="skill-bubble sb-color-lavender" id="sb-cnn">CNN</span>
+              <span class="skill-bubble sb-color-lavender" id="sb-rnn">RNN</span>
+              <span class="skill-bubble sb-color-lavender" id="sb-lstm">LSTM</span>
+              <span class="skill-bubble sb-color-lavender" id="sb-gru">GRU</span>
+            </div>
+          </div>
+
+          <div class="bubble-category" id="skills-genai">
+            <div class="bubble-cat-header">
+              <span class="bubble-cat-icon">&#10024;</span>
+              <h3 class="bubble-cat-title pixel-label">GENERATIVE AI</h3>
+            </div>
+            <div class="bubble-tags">
+              <span class="skill-bubble sb-color-green" id="sb-llm">LLMs</span>
+              <span class="skill-bubble sb-color-green" id="sb-ollama">Ollama</span>
+              <span class="skill-bubble sb-color-green" id="sb-agents">AI Agents</span>
+              <span class="skill-bubble sb-color-green" id="sb-prompt">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <div class="bubble-category" id="skills-dev">
+            <div class="bubble-cat-header">
+              <span class="bubble-cat-icon">&#128640;</span>
+              <h3 class="bubble-cat-title pixel-label">DEVELOPMENT</h3>
+            </div>
+            <div class="bubble-tags">
+              <span class="skill-bubble sb-color-purple" id="sb-fastapi">FastAPI</span>
+              <span class="skill-bubble sb-color-purple" id="sb-flask">Flask</span>
+              <span class="skill-bubble sb-color-purple" id="sb-django">Django</span>
+              <span class="skill-bubble sb-color-purple" id="sb-streamlit">Streamlit</span>
+              <span class="skill-bubble sb-color-purple" id="sb-docker">&#128051; Docker</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS + CERTS ===================== -->
+    <section id="projects" class="section projects-section" aria-label="Projects and Certifications">
+      <div class="container">
+        <div class="projects-certs-layout">
+
+          <!-- Projects Column -->
+          <div class="projects-col">
+            <div class="projects-col-header">
+              <div>
+                <div class="section-tag">// PROJECTS.py</div>
+                <h2 class="section-title">FEATURED <span class="accent">PROJECTS</span></h2>
+              </div>
+              <button class="see-all-btn" id="see-all-btn">SEE ALL &#8599;</button>
+            </div>
+
+            <!-- Project 1 — Featured -->
+            <article class="project-card brut-card featured" id="project-agent" aria-label="AI Data Scientist Agent">
+              <div class="project-visual pv-agent">
+                <div class="pv-label">FEATURED</div>
+                <div class="project-art pa1" aria-hidden="true">
+                  <div class="pa-terminal">
+                    <div class="pa-t-line">&#129302; Agent initialized...</div>
+                    <div class="pa-t-line">&#128202; Analyzing dataset...</div>
+                    <div class="pa-t-line">&#9989; Insights generated!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-num">PROJECT 01</div>
+                <h3 class="project-title">AI Data Scientist Agent</h3>
+                <p class="project-desc">An AI-powered EDA assistant that analyzes datasets, generates insights, writes analysis code, and automates exploratory data analysis — powered by LLM reasoning and tool use.</p>
+                <div class="project-tags" aria-label="Tech stack">
+                  <span class="tag tag-green">Python</span>
+                  <span class="tag tag-green">LangChain</span>
+                  <span class="tag">OpenAI</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">Streamlit</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="project-btn" id="proj1-github">&#9830; GitHub</a>
+                  <a href="#" class="project-btn project-btn-live" id="proj1-demo">&#9654; Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card brut-card" id="project-pulse" aria-label="PulsePredict AI">
+              <div class="project-visual pv-pulse">
+                <div class="pv-label">ML</div>
+                <div class="project-art pa2" aria-hidden="true">
+                  <div class="pulse-wave">
+                    <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" aria-label="Pulse waveform">
+                      <polyline points="0,30 20,30 30,10 40,50 50,30 80,30 90,5 100,55 110,30 150,30 160,20 170,40 180,30 200,30" fill="none" stroke="#FF3CAC" stroke-width="2.5" />
+                    </svg>
+                  </div>
+                  <div class="risk-badge">STROKE RISK: 23%</div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-num">PROJECT 02</div>
+                <h3 class="project-title">PulsePredict AI</h3>
+                <p class="project-desc">ML application for stroke-risk prediction using clinical features, ensemble methods, and explainable AI to help identify at-risk patients early.</p>
+                <div class="project-tags" aria-label="Tech stack">
+                  <span class="tag tag-pink">Python</span>
+                  <span class="tag tag-pink">XGBoost</span>
+                  <span class="tag">SHAP</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">Streamlit</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="project-btn" id="proj2-github">&#9830; GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card brut-card" id="project-trustlens" aria-label="TrustLensAI">
+              <div class="project-visual pv-trust">
+                <div class="pv-label">AI/ML</div>
+                <div class="project-art pa3" aria-hidden="true">
+                  <div class="trust-scan">
+                    <div class="scan-circle">
+                      <div class="scan-inner">&#128269;</div>
+                      <div class="scan-ring"></div>
+                      <div class="scan-ring sr2"></div>
+                    </div>
+                    <div class="scan-label">FAKE DETECTED</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-num">PROJECT 03</div>
+                <h3 class="project-title">TrustLensAI</h3>
+                <p class="project-desc">AI/ML system for detecting suspicious or fake Instagram accounts using behavioral signals, graph features, and ensemble classifiers to combat social media fraud.</p>
+                <div class="project-tags" aria-label="Tech stack">
+                  <span class="tag tag-purple">Python</span>
+                  <span class="tag tag-purple">Scikit-learn</span>
+                  <span class="tag">NLP</span>
+                  <span class="tag">Flask</span>
+                  <span class="tag">LightGBM</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="project-btn" id="proj3-github">&#9830; GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card brut-card" id="project-tomato" aria-label="Tomato Disease Detection">
+              <div class="project-visual pv-tomato">
+                <div class="pv-label">CV / DL</div>
+                <div class="project-art pa4" aria-hidden="true">
+                  <div class="tomato-art">
+                    <div class="tomato-emoji">&#127813;</div>
+                    <div class="tomato-label">HEALTHY &middot; 96.3%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-num">PROJECT 04</div>
+                <h3 class="project-title">Tomato Disease Detection</h3>
+                <p class="project-desc">Deep-learning computer vision system for detecting tomato plant diseases using CNN architectures trained on agricultural image datasets to support smart farming.</p>
+                <div class="project-tags" aria-label="Tech stack">
+                  <span class="tag tag-green">Python</span>
+                  <span class="tag tag-green">TensorFlow</span>
+                  <span class="tag">CNN</span>
+                  <span class="tag">Keras</span>
+                  <span class="tag">OpenCV</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="project-btn" id="proj4-github">&#9830; GitHub</a>
+                  <a href="#" class="project-btn project-btn-live" id="proj4-demo">&#9654; Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Certifications Column -->
+          <aside id="certifications" aria-label="Certifications">
+            <div class="certs-col">
+              <div class="certs-col-title">CERTIFICATIONS</div>
+
+              <div class="cert-card" id="cert-1">
+                <span class="cert-num">CERT 01</span>
+                <div class="cert-issuer">GOOGLE / DEEPLEARNING.AI</div>
+                <h3 class="cert-name">Machine Learning Specialization</h3>
+                <p class="cert-detail">Supervised, Unsupervised &amp; Reinforcement Learning — Andrew Ng</p>
+                <a href="#" class="cert-link" id="cert-link-1">VIEW CERTIFICATE &#8599;</a>
+              </div>
+
+              <div class="cert-card" id="cert-2">
+                <span class="cert-num">CERT 02</span>
+                <div class="cert-issuer">DEEPLEARNING.AI</div>
+                <h3 class="cert-name">Deep Learning Specialization</h3>
+                <p class="cert-detail">Neural Networks, CNNs, Sequence Models, Structuring ML Projects</p>
+                <a href="#" class="cert-link" id="cert-link-2">VIEW CERTIFICATE &#8599;</a>
+              </div>
+
+              <div class="cert-card" id="cert-3">
+                <span class="cert-num">CERT 03</span>
+                <div class="cert-issuer">TENSORFLOW / GOOGLE</div>
+                <h3 class="cert-name">TensorFlow Developer Certificate</h3>
+                <p class="cert-detail">Proficiency in building, training and deploying TF models</p>
+                <a href="#" class="cert-link" id="cert-link-3">VIEW CERTIFICATE &#8599;</a>
+              </div>
+
+              <div class="cert-card" id="cert-4">
+                <span class="cert-num">CERT 04</span>
+                <div class="cert-issuer">COURSERA</div>
+                <h3 class="cert-name">AI For Everyone</h3>
+                <p class="cert-detail">AI strategy, workflow, and ethics for builders — Andrew Ng</p>
+                <a href="#" class="cert-link" id="cert-link-4">VIEW CERTIFICATE &#8599;</a>
+              </div>
+
+              <div class="certs-see-all">
+                <a href="#" id="certs-all-link">VIEW ALL CERTIFICATIONS &#8599;</a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section experience-section" aria-label="Experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// EXPERIENCE.log</div>
+          <h2 class="section-title">MY <span class="accent">JOURNEY</span></h2>
+        </div>
+
+        <div class="exp-layout" role="list" aria-label="Career timeline">
+
+          <div class="exp-sidebar">
+            <div class="exp-sidebar-title">WORK &amp;<br><span>LEARNING</span></div>
+            <div class="exp-filter">
+              <button class="exp-filter-btn active">ALL</button>
+              <button class="exp-filter-btn">PROJECTS</button>
+              <button class="exp-filter-btn">LEARNING</button>
+            </div>
+          </div>
+
+          <div class="exp-list">
+
+            <div class="exp-item" role="listitem" id="exp-1">
+              <div class="exp-date">2026 — NOW</div>
+              <div class="exp-content">
+                <span class="exp-level">LVL 03</span>
+                <h3 class="exp-title">ML Developer — Personal Projects &amp; Open Source</h3>
+                <div class="exp-company">Independent Research</div>
+                <p class="exp-desc">Building AI agents, predictive models, and deep learning pipelines. Exploring LLMs, RAG, and multi-agent frameworks. Contributing to the open-source ML ecosystem.</p>
+                <div class="exp-tags">
+                  <span class="tag tag-green">LLMs</span>
+                  <span class="tag tag-green">RAG</span>
+                  <span class="tag">AI Agents</span>
+                  <span class="tag">MLOps</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item" role="listitem" id="exp-2">
+              <div class="exp-date">2025</div>
+              <div class="exp-content">
+                <span class="exp-level">LVL 02</span>
+                <h3 class="exp-title">Deep Learning Practitioner</h3>
+                <div class="exp-company">Self-directed Learning</div>
+                <p class="exp-desc">Mastered CNN, RNN, LSTM architectures. Built computer vision pipelines for image classification and disease detection. Deployed models with TensorFlow Serving and Docker.</p>
+                <div class="exp-tags">
+                  <span class="tag tag-purple">CNN</span>
+                  <span class="tag tag-purple">LSTM</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item" role="listitem" id="exp-3">
+              <div class="exp-date">2024</div>
+              <div class="exp-content">
+                <span class="exp-level">LVL 01</span>
+                <h3 class="exp-title">ML Foundations &amp; Competitive Coding</h3>
+                <div class="exp-company">Academic &amp; LeetCode</div>
+                <p class="exp-desc">Established strong foundations in machine learning algorithms, data structures, and algorithms. Built first predictive models and began competitive programming journey.</p>
+                <div class="exp-tags">
+                  <span class="tag">Scikit-learn</span>
+                  <span class="tag">Data Science</span>
+                  <span class="tag tag-pink">DSA</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LEETCODE / DSA ===================== -->
+    <section id="leetcode" class="section leetcode-section" aria-label="LeetCode and DSA">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// LEADERBOARD.dat</div>
+          <h2 class="section-title">DSA <span class="accent">ARENA</span></h2>
+        </div>
+
+        <div class="arcade-panel" id="arcade-panel" aria-label="LeetCode stats">
+          <div class="arcade-header">
+            <div class="arcade-logo">&#127918; LEETCODE ARCADE — TANISH</div>
+            <div class="arcade-status"><span class="arcade-blink">&#9654;</span> ACTIVE</div>
+          </div>
+
+          <div class="arcade-stats">
+            <div class="arcade-stat" id="lc-total">
+              <div class="as-val">150+</div>
+              <div class="as-label">SOLVED</div>
+              <div class="as-bar"><div class="as-fill" style="width:60%"></div></div>
+            </div>
+            <div class="arcade-stat" id="lc-easy">
+              <div class="as-val as-easy">80</div>
+              <div class="as-label">EASY</div>
+              <div class="as-bar"><div class="as-fill as-fill-easy" style="width:80%"></div></div>
+            </div>
+            <div class="arcade-stat" id="lc-medium">
+              <div class="as-val as-med">55</div>
+              <div class="as-label">MEDIUM</div>
+              <div class="as-bar"><div class="as-fill as-fill-med" style="width:55%"></div></div>
+            </div>
+            <div class="arcade-stat" id="lc-hard">
+              <div class="as-val as-hard">15</div>
+              <div class="as-label">HARD</div>
+              <div class="as-bar"><div class="as-fill as-fill-hard" style="width:30%"></div></div>
+            </div>
+          </div>
+
+          <div class="arcade-topics" aria-label="Favorite DSA topics">
+            <div class="topics-label">// FAVORITE TOPICS</div>
+            <div class="topics-list">
+              <div class="topic-chip" id="dsa-dp">Dynamic Programming</div>
+              <div class="topic-chip" id="dsa-graph">Graphs</div>
+              <div class="topic-chip" id="dsa-tree">Trees</div>
+              <div class="topic-chip" id="dsa-arrays">Arrays</div>
+              <div class="topic-chip" id="dsa-bfs">BFS / DFS</div>
+              <div class="topic-chip" id="dsa-sliding">Sliding Window</div>
+            </div>
+          </div>
+
+          <div class="arcade-footer">
+            <a href="https://leetcode.com/tanish" target="_blank" rel="noopener noreferrer" class="arcade-link" id="lc-profile-link">
+              &#127918; VIEW PROFILE ON LEETCODE
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact-section" aria-label="Contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// CONTACT.send()</div>
+        </div>
+
+        <div class="contact-layout">
+
+          <div class="contact-main">
+            <h2 class="contact-main-title">LET'S BUILD<br>SOMETHING<br><span class="accent">INTELLIGENT.</span></h2>
+            <p class="contact-intro">Open to ML internships, collaborations, and interesting AI projects. Let's connect and build something amazing together!</p>
+
+            <div class="contact-items" role="list" aria-label="Contact links">
+              <a href="mailto:tanish@example.com" class="contact-item" id="contact-email" role="listitem">
+                <div class="ci-icon">&#128231;</div>
+                <div class="ci-info">
+                  <span class="ci-label">EMAIL</span>
+                  <span class="ci-value">tanish@example.com</span>
+                </div>
+                <div class="ci-arrow">&#8599;</div>
+              </a>
+
+              <a href="https://github.com/tanish" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github" role="listitem">
+                <div class="ci-icon">&#9830;</div>
+                <div class="ci-info">
+                  <span class="ci-label">GITHUB</span>
+                  <span class="ci-value">github.com/tanish</span>
+                </div>
+                <div class="ci-arrow">&#8599;</div>
+              </a>
+
+              <a href="https://linkedin.com/in/tanish" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin" role="listitem">
+                <div class="ci-icon">&#128279;</div>
+                <div class="ci-info">
+                  <span class="ci-label">LINKEDIN</span>
+                  <span class="ci-value">linkedin.com/in/tanish</span>
+                </div>
+                <div class="ci-arrow">&#8599;</div>
+              </a>
+
+              <a href="https://leetcode.com/tanish" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-leetcode" role="listitem">
+                <div class="ci-icon">&#127918;</div>
+                <div class="ci-info">
+                  <span class="ci-label">LEETCODE</span>
+                  <span class="ci-value">leetcode.com/tanish</span>
+                </div>
+                <div class="ci-arrow">&#8599;</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-panel">
+            <div class="contact-panel-title">LET'S BUILD<br>SOMETHING<br><span>AMAZING</span><br>TOGETHER.</div>
+            <p class="contact-panel-sub">Ready to collaborate on your next AI project? I'm just one message away.</p>
+            <a href="mailto:tanish@example.com" class="btn btn-primary" id="contact-panel-btn">GET IN TOUCH &#8599;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo">TANISH</div>
+      <p class="footer-copy">&#169; 2026 TANISH &mdash; ML ENGINEER</p>
+      <p class="footer-built">BUILT WITH <span>PYTHON, AI</span> &amp; A LOT OF COFFEE &#9749;</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
